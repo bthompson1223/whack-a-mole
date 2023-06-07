@@ -13,5 +13,7 @@
 }
 
 .mole {
-    background-color: : blue;
+    background-image: url(img/mole.jpg);
+    background-size: 200px;
+
 }
