@@ -26,8 +26,21 @@ squares.forEach((square) => {
       hitPosition = null;
     }
   });
+});
 
+squares.forEach((square) => {
   square.addEventListener("touchstart", () => {
+    if (square.id === hitPosition) {
+      result++;
+      score.textContent = result;
+      hitPosition = null;
+    }
+  });
+});
+
+squares.forEach((square) => {
+  square.addEventListener("touchstart", (e) => {
+    e.preventDefault();
     if (square.id === hitPosition) {
       result++;
       score.textContent = result;
