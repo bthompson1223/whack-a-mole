@@ -1,19 +1,30 @@
-.grid {
-    display: flex;
-    width: 606px;
-    height: 606px;
-    flex-wrap: wrap;
+body {
+  font-family: sans-serif;
+  font-size: large;
+}
 
+.grid {
+  display: flex;
+  width: 606px;
+  height: 606px;
+  flex-wrap: wrap;
 }
 
 .square {
-    height: 200px;
-    width: 200px;
-    border: black solid 1px;
+  height: 200px;
+  width: 200px;
+  border: black solid 1px;
 }
 
 .mole {
-    background-image: url(img/mole.jpg);
-    background-size: 200px;
+  background-image: url(img/mole.jpg);
+  background-size: 200px;
+}
 
+#score {
+  margin: 10px;
+}
+
+#time-left {
+  margin: 10px;
 }
